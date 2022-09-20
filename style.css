@@ -10,10 +10,13 @@
     --bg-body: #f1f1f1;
     --bg-content: linear-gradient(45deg, #f1f1f1, #83b344);
     --bg-button: greenyellow;
+    --bg-button-lite: #83b344;
+    --color: #fff;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    /* position: relative; */
 }
 
 a {
@@ -22,6 +25,10 @@ a {
 
 ul {
     list-style: none;
+}
+
+button{
+    cursor: pointer;
 }
 
 body {
@@ -37,7 +44,7 @@ body {
 .main {
     position: relative;
     width: 90%;
-    height: 90%;
+    height: 95%;
     background: var(--bg-content);
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -61,7 +68,7 @@ body {
     border-radius: 1rem;
     border: 2px solid var(--bg-button);
     ;
-    color: #fff;
+    color: var(--color);
     transition: .4s;
 }
 
@@ -81,8 +88,9 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 90%;
-    height: 75%;
-    background: rgba(255, 255, 255, .3);
+    height: 70%;
+    
+    background: rgba(0, 0, 0, 0.712);
     border-radius: 1rem;
     border-top: 1px solid rgba(255, 255, 255, .3);
     border-left: 1px solid rgba(255, 255, 255, .3);
@@ -92,6 +100,7 @@ body {
     justify-content: center;
     transition: .6s;
     opacity: 0;
+    /* z-index: 4; */
 }
 
 .top__content {
@@ -141,13 +150,13 @@ body {
     border-radius: 2rem;
     box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
     width: 50%;
-    color: #fff;
+    color: var(--color);
     transition: all .4s;
 }
 
 
 ::placeholder {
-    color: #fff;
+    color: var(--color);
 }
 
 input:hover,
@@ -158,19 +167,19 @@ input[type="password"]:focus {
 }
 
 .btn__con {
-    font-size: 1rem;
+    font-size: .7rem;
 
 }
 
 .btn__con:hover,
 .btn__con:focus {
-    background: #83b344;
+    background: var(--bg-button-lite);
 }
 
 .home {
     display: flex;
-    height: 60%;
-    /* background-color: #83b344; */
+    height: 65%;
+    
 }
 
 .home__container {
@@ -182,7 +191,107 @@ input[type="password"]:focus {
     right: 0;
     width: 400px;
     bottom: 0;
+
 }
+
+.home__content{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: var(--color);
+
+}
+.home__content span{
+    display: block;
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: var(--bg-button-lite);
+}
+
+
+
+.home__btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    border-radius: .5rem;
+    background-color: var(--bg-button);
+    
+}
+
+
+.home__btn:hover{
+    background-color: var(--bg-button-lite);
+}
+
+
+
+
+
+
+.modale{
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000041;
+    /* z-index: 1000; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.modale-show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modale__content{
+    position: relative;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.712);
+    border-radius: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    /* background-color: var(--bg-body); */
+}
+.modale__title{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color);
+}
+
+.input-doc{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    color: var(--color);
+    transition: all .4s;
+}
+
+.icon__close{
+    position: absolute;
+    top: .5rem;
+    right:.5rem;
+    color: var(--color);
+    font-size: 2rem;   
+}
+
 
 @media screen and (max-width: 874px) {
     .navbar {
@@ -200,6 +309,10 @@ input[type="password"]:focus {
     .menu--item a {
         font-size: 0.7rem;
     }
+
+    .home__img{
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 626px) {
@@ -210,6 +323,18 @@ input[type="password"]:focus {
     .logo img {
         width: 150px;
     }
+
+    .home__content{
+        font-size: 2rem;
+    }
+    .home__content span{
+        font-size: 2.5rem;      
+    }
+
+    
+.home__btn{
+    padding: 1rem 1rem;
+}
 }
 
 @media screen and (max-width: 512px) {
@@ -231,5 +356,18 @@ input[type="password"]:focus {
 
     .logo img {
         width: 100px;
+    }
+
+    .home__img{
+        width: 200px;
+    }
+}
+@media screen and (max-width:391px ) {
+
+    .home__content{
+        font-size: 1.5rem;
+    }
+    .home__content span{
+        font-size: 2rem;      
     }
 }
