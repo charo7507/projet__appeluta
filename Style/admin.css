@@ -1,0 +1,100 @@
+@import'https://fonts.googleapis.com/css2? family=Poppins:wght@300&family=Raleway:wght@200;300;400;500&display=swap';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.main{
+    padding: 1rem;
+}
+
+.dash{
+    display: grid;
+    grid-template-areas:"dashboard dashboard__content";
+    grid-template-columns: 25% 75%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 1rem;
+}
+
+.dashboard{
+    grid-area: dashboard;
+
+    background: linear-gradient(45deg, #f1f1f1, #83b344);
+    border-radius: 1rem 0 0 1rem;
+    height: 95vh;
+    overflow: hidden;
+
+}
+.dashboard__content{
+    grid-area: dashboard__content;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.logo{
+    width: 150px;
+    text-align: center;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-content{
+    margin-top: 4rem;
+}
+
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    list-style: none;
+}
+
+.items{
+    margin-bottom: 1rem;
+}
+
+.svg{
+    position: relative;
+    height: 100%;
+}
+
+svg{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 200px;
+
+}
+
+.dashboard__content-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #f1f1f1;
+}
+
+.icon__user{
+    margin-left: .5rem;
+    font-size: 2rem;
+}
