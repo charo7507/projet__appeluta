@@ -142,10 +142,13 @@ svg{
     }
 }
 
-
 @media screen and (max-width: 1062px) {
     .dashboard__content-home{
         grid-template-columns: 1fr;
+    }
+
+    svg{
+        width: 70px;
     }
 }
 
