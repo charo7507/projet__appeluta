@@ -123,6 +123,7 @@ svg{
     gap: .5rem;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: all .4s;
@@ -165,25 +166,6 @@ svg{
    background: transparent;
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td{
-    padding: 1rem;
-    text-align: left;
-    border: 1px solid #ccc;
-}
-
-th{
-    background: #000;
-    color:#fff ;
-}
-tr:nth-child(odd)
-{
-    background: #eee;
-}
 
 
 /* @media screen and (max-width: 700px) {
@@ -205,7 +187,6 @@ tr:nth-child(odd)
     
         background: linear-gradient(45deg, #f1f1f1, #83b344);
         border-radius: 1rem;
-        overflow: hidden;
         min-height: 5vh;
         width: 100%;
     }
@@ -241,7 +222,7 @@ tr:nth-child(odd)
         display: block;
     }
     .btn__dec {
-        padding: .5rem ;
+        padding: 1rem ;
         /* margin-bottom: 4rem; */
         border: 0;
         outline: none;
