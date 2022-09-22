@@ -118,6 +118,7 @@ svg{
 
 .omm{
     background-color: #f1f1f1;
+    cursor: pointer;
     padding: .2rem;
     display: flex;
     gap: .5rem;

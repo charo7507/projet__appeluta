@@ -20,13 +20,10 @@
                 <nav class="dashboard-content">
                     <ul class="list">
                         <li class="items">
-
                         </li>
                         <li class="items">
-
                         </li>
                     </ul>
-
                 </nav>
 
             </div>
@@ -118,32 +115,29 @@
         const modale__droit = document.querySelector('.modale__droit')
         const modale__rit = document.querySelector('.modale__rit')
         const modale__fba = document.querySelector('.modale__fba')
-        
-        const closeModale= document.querySelectorAll('.icon__close')
 
-        
-        droit.addEventListener('click', ()=>{
+        const closeModale = document.querySelectorAll('.icon__close')
+
+
+        droit.addEventListener('click', () => {
             modale__droit.classList.add('modale-show')
         })
 
-        igl.addEventListener('click', ()=>{
+        igl.addEventListener('click', () => {
             modale__rit.classList.add('modale-show')
         })
 
-        fba.addEventListener('click', ()=>{
+        fba.addEventListener('click', () => {
             modale__fba.classList.add('modale-show')
         })
 
-        closeModale.forEach(el =>{
-            el.addEventListener('click', () =>{
-            modale__droit.classList.remove('modale-show')
-            modale__rit.classList.remove('modale-show')
-            modale__fba.classList.remove('modale-show')
-})
+        closeModale.forEach(el => {
+            el.addEventListener('click', () => {
+                modale__droit.classList.remove('modale-show')
+                modale__rit.classList.remove('modale-show')
+                modale__fba.classList.remove('modale-show')
+            })
         })
-
-
-
     </script>
 </body>
 
