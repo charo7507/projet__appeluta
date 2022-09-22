@@ -5,6 +5,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --bg-body: #f1f1f1;
+    --bg-content: linear-gradient(45deg, #f1f1f1, #83b344);
+    --bg-button: greenyellow;
+    --bg-button-lite: #83b344;
+    --color: #fff;
+}
 a {
     text-decoration: none;
 }
@@ -66,6 +74,7 @@ button{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 2rem;
     height: 100%;
     list-style: none;
 }
@@ -119,6 +128,35 @@ svg{
 
 .icon__user{
     font-size: 2rem;
+}
+
+.btn__dec {
+    padding: 1rem 2rem;
+    /* margin-bottom: 4rem; */
+    border: 0;
+    outline: none;
+    border-radius: .5rem;
+    color: var(--color);
+    background-color: crimson;
+    transition: all .4s;
+    
+}
+
+.btn__dec:hover{
+    background: var(--bg-button-lite);
+}
+
+.btn__add{
+    padding: 1rem 2rem;
+    /* margin-bottom: 4rem; */
+    border-radius: .5rem;
+    color: var(--color);
+    background-color: var(--bg-button-lite);
+    transition: all .4s;
+}
+.btn__add:hover{
+   border: 2px solid var(--bg-button-lite);
+   background: transparent;
 }
 
 table{
