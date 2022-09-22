@@ -13,10 +13,6 @@
     --bg-button-lite: #83b344;
     --color: #fff;
 }
-body {
-    font-family: 'Poppins', sans-serif;
-    /* position: relative; */
-}
 a {
     text-decoration: none;
 }
@@ -47,8 +43,8 @@ button{
 
     background: linear-gradient(45deg, #f1f1f1, #83b344);
     border-radius: 1rem 0 0 1rem;
-    min-height: 95vh;
-
+    height: 95vh;
+    /* overflow: hidden; */
 
 }
 .dashboard__content{
@@ -118,9 +114,9 @@ svg{
 
 .omm{
     background-color: #f1f1f1;
-    padding: .2rem;
+    padding: 1rem;
     display: flex;
-    gap: .5rem;
+    gap: 1rem;
     flex-direction: column;
     align-items: center;
     border-radius: .5rem;
@@ -129,7 +125,7 @@ svg{
 }
 
 .omm:hover{
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .icon__user{
@@ -138,7 +134,7 @@ svg{
 
 .btn__dec {
     padding: 1rem 2rem;
-    /* margin-bottom: 4rem; */
+
     border: 0;
     outline: none;
     border-radius: .5rem;
@@ -154,7 +150,7 @@ svg{
 
 .btn__add{
     padding: 1rem 2rem;
-    /* margin-bottom: 4rem; */
+
     border-radius: .5rem;
     color: var(--color);
     background-color: var(--bg-button-lite);
@@ -165,25 +161,6 @@ svg{
    background: transparent;
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td{
-    padding: 1rem;
-    text-align: left;
-    border: 1px solid #ccc;
-}
-
-th{
-    background: #000;
-    color:#fff ;
-}
-tr:nth-child(odd)
-{
-    background: #eee;
-}
 
 
 /* @media screen and (max-width: 700px) {
@@ -202,28 +179,16 @@ tr:nth-child(odd)
 
     .dashboard{
         grid-area: dashboard;
-    
-        background: linear-gradient(45deg, #f1f1f1, #83b344);
-        border-radius: 1rem;
-        overflow: hidden;
-        min-height: 5vh;
+        height: 100%;
         width: 100%;
     }
     .dashboard__content{
         grid-area: dashboard__content;
-        border-radius: 0 1rem 1rem 0;
+  
         width: 100%;
     }
-
     .btn__dec {
-        padding: 1rem ;
-        /* margin-bottom: 4rem; */
-        border: 0;
-        outline: none;
-        border-radius: .5rem;
-        color: var(--color);
-        background-color: crimson;
-        transition: all .4s;
+        padding: .5rem;
         
     }
 }
@@ -240,16 +205,9 @@ tr:nth-child(odd)
     table, thead, tr, th, td{
         display: block;
     }
+
     .btn__dec {
-        padding: .5rem ;
-        /* margin-bottom: 4rem; */
-        border: 0;
-        outline: none;
-        border-radius: .5rem;
-        color: var(--color);
-        background-color: crimson;
-        transition: all .4s;
-        
+        padding: .5rem;
     }
 }
 

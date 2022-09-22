@@ -1,3 +1,5 @@
+
+/*******INDEX */
 const oppenToggle = document.querySelector('.menu--item')
 const topww = document.querySelector('.top')
 
@@ -19,3 +21,5 @@ closeModale.addEventListener('click', () =>{
     modale.classList.remove('modale-show')
 
 })
+
+
