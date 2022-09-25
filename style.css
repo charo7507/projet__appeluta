@@ -138,6 +138,23 @@ body {
     flex-direction: column;
 }
 
+.inp-box{
+    width: 50%;
+}
+.input-add_pass {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    color: var(--color);
+    transition: all .4s;
+}
 .input-add,
 .btn__con {
     background: transparent;
@@ -189,7 +206,7 @@ input[type="password"]:focus {
 .home__img{
     position: absolute;
     right: 0;
-    width: 400px;
+    width: 300px;
     bottom: 0;
 
 }
@@ -282,6 +299,17 @@ input[type="password"]:focus {
     width: 100%;
     color: var(--color);
     transition: all .4s;
+}
+
+.eye{
+    position: relative;
+    width: 100%;
+    position: absolute;
+    right:27%;
+    top: 55%;
+    transform: translateY(-55%);
+    width: 20px;
+    cursor: pointer;
 }
 
 .input-box i{

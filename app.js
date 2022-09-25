@@ -11,8 +11,12 @@ const closeModale = document.querySelector('.icon__close')
 
 const eyes = document.querySelector('.input-box i')
 
+const eyes2 = document.querySelector('.eye')
 
 const pwd = document.getElementById('input-doc')
+const pwd2 = document.getElementById('input-doc2')
+
+
 
 
 eyes.addEventListener('click', (e)=>{
@@ -24,6 +28,19 @@ eyes.addEventListener('click', (e)=>{
     }else if(eyes.classList.contains("bi-eye-slash-fill")){
         pwd.setAttribute('type', 'password')
         eyes.classList.replace("bi-eye-slash-fill", "bi-eye-fill")
+  
+    }
+})
+
+eyes2.addEventListener('click', ()=>{
+
+    if(eyes2.classList.contains("bi-eye-fill")){
+        pwd2.setAttribute('type', 'text')
+        eyes2.classList.replace("bi-eye-fill", "bi-eye-slash-fill")
+
+    }else if(eyes2.classList.contains("bi-eye-slash-fill")){
+        pwd2.setAttribute('type', 'password')
+        eyes2.classList.replace("bi-eye-slash-fill", "bi-eye-fill")
   
     }
 })
