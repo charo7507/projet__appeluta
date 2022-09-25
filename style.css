@@ -284,6 +284,18 @@ input[type="password"]:focus {
     transition: all .4s;
 }
 
+.input-box i{
+    position: relative;
+    width: 100%;
+    position: absolute;
+    right:2rem;
+    top: 57%;
+    transform: translateY(-57%);
+    width: 20px;
+    cursor: pointer;
+}
+
+
 .icon__close{
     position: absolute;
     top: .5rem;

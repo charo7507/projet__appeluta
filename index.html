@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
     <title>Accueil</title>
 </head>
 <body>
@@ -55,7 +56,10 @@
           <i class='bx bx-x icon__close'></i>
           <form class="form" action=""> 
             <input class="input-doc" type="text" placeholder="Login">
-                  <input class="input-doc" type="password" placeholder="Mot de passe">
+            <div class="input-box">
+              <input class="input-doc" id="input-doc" type="password" placeholder="Mot de passe">
+              <i class="bi bi-eye-fill"></i>
+            </div>
                   <button class="btn__con">Connexion</button>
           </form>
         </div>
