@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../Style/accueilapeladmin.css">
+    <title>Page Admin</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="dash">
+            <div class="dashboard">
+                <header class="head">
+                    <img src="../img/R-removebg-preview.png" alt="" class="logo">
+                </header>
+                <nav class="dashboard-content">
+                    <ul class="list">
+                        <li class="items">
+                        </li>
+                        <li class="items">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="dashboard__content">
+                <header>
+                    <nav class="dashboard__content-nav">
+                        <div>
+                            <form action="">
+                                <button class="btn__dec">Deconnexion</button>
+                            </form>
+                        </div>
+                        <div class="icon__nav">
+                            Bienvenu cher Docteur <i class='bx bxs-user-pin icon__user'></i>
+                        </div>
+                    </nav>
+                </header>
+                <div class="dashboard__content-home">
+                    <div class="omm" id="droit">
+                        <i class='bx bxl-stack-overflow icon__user'></i>
+                        FILIERE: DROIT
+                    </div>
+                    <div class="omm" id="igl">
+                        <i class='bx bx-code-alt icon__user'></i>
+                        FILIERE: IGL
+                    </div>
+                    <div class="omm" id="fba">
+                        <i class='bx bxs-credit-card icon__user'></i>
+                        FILIERE: FBA
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modale__droit">
+            <div class="modale__content">
+                <h4 class="modale__title">DROIT</h4>
+                <i class='bx bx-x icon__close'></i>
+                <nav class="menu">
+                    <ul class="list">
+                        <li class="link"><a href="admin.html">LICENCE: Licence 1</a></li>
+                        <li class="link"><a href="admin.html">Licence 2</a></li>
+                        <li class="link"><a href="admin.html">Licence 3</a></li>
+                        <li class="link"><a href="admin.html">Master 1</a></li>
+                        <li class="link"><a href="admin.html">Master 2</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="modale__rit">
+            <div class="modale__content">
+                <h4 class="modale__title">LICENCE: IGL</h4>
+                <i class='bx bx-x icon__close'></i>
+                <nav class="menu">
+                    <ul class="list">
+                        <li class="link"><a href="admin.html">Licence 1</a></li>
+                        <li class="link"><a href="admin.html">Licence 2</a></li>
+                        <li class="link"><a href="admin.html">Licence 3</a></li>
+                        <li class="link"><a href="admin.html">Master 1</a></li>
+                        <li class="link"><a href="admin.html">Master 2</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="modale__fba">
+            <div class="modale__content">
+                <h4 class="modale__title">LICENCE: FBA</h4>
+                <i class='bx bx-x icon__close'></i>
+                <nav class="menu">
+                    <ul class="list">
+                        <li class="link"><a href="admin.html">Licence 1</a></li>
+                        <li class="link"><a href="admin.html">Licence 2</a></li>
+                        <li class="link"><a href="admin.html">Licence 3</a></li>
+                        <li class="link"><a href="admin.html">Master 1</a></li>
+                        <li class="link"><a href="admin.html">Master 2</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        /********ACCUEILAPPEL */
+        const droit = document.querySelector('#droit')
+        const igl = document.querySelector('#igl')
+        const fba = document.querySelector('#fba')
+
+
+        const modale__droit = document.querySelector('.modale__droit')
+        const modale__rit = document.querySelector('.modale__rit')
+        const modale__fba = document.querySelector('.modale__fba')
+
+        const closeModale = document.querySelectorAll('.icon__close')
+
+
+        droit.addEventListener('click', () => {
+            modale__droit.classList.add('modale-show')
+        })
+
+        igl.addEventListener('click', () => {
+            modale__rit.classList.add('modale-show')
+        })
+
+        fba.addEventListener('click', () => {
+            modale__fba.classList.add('modale-show')
+        })
+
+        closeModale.forEach(el => {
+            el.addEventListener('click', () => {
+                modale__droit.classList.remove('modale-show')
+                modale__rit.classList.remove('modale-show')
+                modale__fba.classList.remove('modale-show')
+            })
+        })
+    </script>
+</body>
+
+</html>
